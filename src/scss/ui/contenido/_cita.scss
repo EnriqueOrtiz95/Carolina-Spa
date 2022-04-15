@@ -1,0 +1,34 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.cita{
+
+    background-image: url(/16-carolinaspa/16-carolinaspa/build/img/bg_citas.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 5rem 0;
+    text-align: center;
+    background-attachment: fixed;
+     /*PARA HACER PARALLAX*/
+
+    &__heading{
+        font-family: v.$fuentePrincipal;
+        font-size: 6rem;
+        color: v.$blanco;
+        line-height: .8;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    &__texto{
+        max-width: 60rem;
+        margin: 0 auto;
+        color: v.$blanco;
+        line-height: 1.8;
+    }
+
+    &__enlace{
+        @include m.boton(v.$primario, v.$blanco);
+        padding: 2rem 10rem;
+    }
+}

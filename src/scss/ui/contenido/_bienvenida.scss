@@ -1,0 +1,29 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.bienvenida{
+    text-align: center;
+    &__heading{
+        text-align: center;
+        color: v.$secundario;
+        font-family: v.$fuenteCursiva;
+        line-height: .8;
+        font-weight: 400;
+        text-transform: lowercase;
+
+        span{
+            color: v.$negro;
+            display: block;
+            text-transform: uppercase;
+            font-family: v.$fuentePrincipal;
+        }
+    }
+
+    &__texto{
+        font-size: 2.6rem;
+        color: v.$gris;
+        max-width: 50rem;
+        margin: 4rem auto 0 auto;
+        line-height: 1.8;
+    }
+}
